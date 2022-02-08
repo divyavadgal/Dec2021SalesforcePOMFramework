@@ -10,6 +10,7 @@ public class LoginTest extends BaseTest{
 	
 	@Test
 	public void invalidLoginTest() {
+		//new line
 		System.out.println("entering to logintest @test");
 		String username=CommmonUtilities.getApplicationProperty("username");
 		loginPage.enterIntoUsername(username);
