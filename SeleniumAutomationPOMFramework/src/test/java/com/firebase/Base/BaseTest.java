@@ -71,6 +71,7 @@ public class BaseTest {
 		} else if(result.getStatus()==ITestResult.FAILURE) {
 			report.logTestFailed();
 			String path=takescreenshot();
+			System.out.println("path of the screenshot taken="+path);
 			try {
 				report.logger.addScreenCaptureFromPath(path);
 				//report.logger.addScreenCaptureFromPath(path, path)
@@ -104,7 +105,7 @@ public class BaseTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "D://BatchProjectCodes//Dec21//SeleniumAutomation//screenshots//firebase.jpg";
+		return filePath;
 	}
 	
 
